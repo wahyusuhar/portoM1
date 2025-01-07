@@ -66,10 +66,11 @@ img {
 
 
 .navbar {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
 }
 
 .container {
@@ -127,14 +128,20 @@ img {
 }
 
 .header {
-    background-image: url(./images/header.jpg);
-    min-height: 100vh;
+    background-image: url(./images/2.jpeg);
+    height: 105vh; /* Tinggi penuh layar */
+    min-height: 600px; /* Minimum tinggi jika layar terlalu kecil */
     background-color: #111;
-    background-position: top right;
-    background-size: cover;
-    background-attachment: fixed;
-
+    background-position: center center; /* Gambar di tengah */
+    background-size: cover; /* Gambar menutupi area */
+    background-attachment: fixed; /* Efek paralaks */
+    display: flex; /* Untuk menyusun konten di tengah */
+    justify-content: center; /* Posisi horizontal konten */
+    align-items: center; /* Posisi vertikal konten */
+    margin-top: -68px;
 }
+
+
 
 .header {
     min-height: 100vh;
