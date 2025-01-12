@@ -82,7 +82,7 @@ section .box {
     top: -8%;
     bottom: 55%;
     left: -5%;
-    background-image: url(./images/1.jpeg);
+    background-image: url(/images/album/1.jpeg);
     background-repeat: repeat;
     z-index: 0;
 }

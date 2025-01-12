@@ -128,7 +128,7 @@ img {
 }
 
 .header {
-    background-image: url(./images/2.jpeg);
+    background-image: url(/images/2.jpeg);
     height: 105vh; /* Tinggi penuh layar */
     min-height: 600px; /* Minimum tinggi jika layar terlalu kecil */
     background-color: #111;
