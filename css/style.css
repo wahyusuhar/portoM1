@@ -486,3 +486,93 @@ section .box {
     padding: 0.75rem 1rem;
     border: none;
 }
+
+/* ******************* */
+
+
+/* Container Proyek */
+.project-container {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 700px;
+    overflow: hidden;
+    margin-right: 60px;
+    margin-top: -200px;
+  }
+
+/* Foto Proyek */
+.project-image img {
+width: 100%;
+max-width: 250px;
+height: auto;
+display: block;
+object-fit: cover;
+}
+
+/* Informasi Proyek */
+.project-info {
+padding: 20px;
+flex: 1;
+}
+
+.project-info h2 {
+margin: 0 0 10px;
+font-size: 1.5rem;
+color: #333;
+}
+
+.project-info p {
+margin: 0 0 20px;
+color: #666;
+line-height: 1.6;
+}
+
+.project-info button {
+padding: 10px 20px;
+background-color: #042e5b;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1rem;
+transition: background-color 0.3s;
+}
+
+.project-info button:hover {
+background-color: #0056b3;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .project-container {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 60px;
+    }
+  
+    .project-image img {
+      max-width: 100%;
+    }
+  
+    .project-info {
+      padding: 15px;
+    }
+  
+    .project-info h2 {
+      font-size: 1.25rem;
+    }
+  
+    .project-info p {
+      font-size: 0.9rem;
+    }
+  
+    .project-info button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
